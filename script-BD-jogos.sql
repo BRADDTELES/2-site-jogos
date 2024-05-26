@@ -33,5 +33,6 @@ primary key(cod),
 foreign key(genero) references generos(cod),
 foreign key(produtora) references produtoras(cod)
 ) engine=InnoDB default charset=utf8;
-
-select * from jogos;
+describe generos;
+insert into generos values(1, 'Ação'),(2,'Aventura'),(3,'Terror'),(4,'Plataforma'),(5,'Estratégia'),(6,'RPG'),(7,'Essporte'),(8,'Corrida'),(9,'Tabbuleiro'),(10,'Puzzle'),(11,'Luta'),(12,'Musical');
+select * from generos;
