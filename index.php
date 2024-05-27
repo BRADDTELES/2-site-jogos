@@ -18,13 +18,14 @@
         ?>
         <h1>Escolha seu jogo</h1>
         <form method="get" id="busca" action="index.php">
-            Ordenar: Nome | Produtora | Nota Alta | Nota Baixa |    <!---  PAREI POR AQUI COMEÇAR A ASSISTIR O VIDEO 08 -->
-            Buscar: <input type="text" name="c" size="10" maxlength="40"/>
+            Ordenar: Nome | Produtora | Nota Alta | Nota Baixa |
+            <!---  PAREI POR AQUI COMEÇAR A ASSISTIR O VIDEO 08 -->
+            Buscar: <input type="text" name="c" size="10" maxlength="40" />
             <input type="submit" value="Ok">
         </form>
         <table class="listagem">
             <?php
-            $q = "SELECT j.cod, j.nome, g.genero, p.produtora, j.capa FROM jogos j JOIN generos g ON j.genero = g.cod JOIN produtoras p ON j.produtora = p.cod ORDER BY nome;";
+            $q = "SELECT j.cod, j.nome, g.genero, p.produtora, j.capa FROM jogos j JOIN generos g ON j.genero = g.cod JOIN produtoras p ON j.produtora = p.cod;";
             $busca = $banco->query($q);
             if (!$busca) {
                 echo "<tr><td>Infelizmente a busca deu errado</td></tr>";
