@@ -1,4 +1,5 @@
 SELECT * FROM bd_games.generos;
+
 insert into produtoras (cod, produtora, pais) values (5, 'Activision', 'EUA');
 (1,'Microsoft', 'EUA'),
 (2,'Tencent','China'),

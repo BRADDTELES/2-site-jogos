@@ -3,7 +3,19 @@ body {
   font-family: Tahoma;
 }
 
-#corpo {
+header {
+    font-size: 12px;
+    text-align: right;
+    font-family: Arial;
+}
+
+form#busca{
+    font-size: 12px;
+    text-align: right;
+    font-family: Arial;
+}
+
+div#corpo {
   width: 800px;
   margin: auto;
   padding: 20px;
@@ -38,6 +50,26 @@ table.listagem tr:nth-child(even){
     background-color: #f2f2f2;
 }
 
+table.detalhes{
+    width: 100%;
+}
+
+table.detalhes td{
+    padding: 10px;
+    vertical-align: top;
+    /* border: 1px solid black; */
+}
 img.mini{
     width: 50px;
 }
+
+img.full{
+    height: 400px;
+}
+
+footer {
+    text-align: center;
+    font-family: Arial;
+    font-size: 12px;
+}
+
