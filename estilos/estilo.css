@@ -37,3 +37,7 @@ table.listagem td:nth-child(3){
 table.listagem tr:nth-child(even){
     background-color: #f2f2f2;
 }
+
+img.mini{
+    width: 50px;
+}
