@@ -1,4 +1,5 @@
-# Criação de um site de jogos, vídeo aulas vistas pelo Estudonauta by Mestre Guanabara.
+# Criando um site de jogos, by Estudonauta
+## Vídeo aulas vistas, mas 'incompletas' (faltam mais modulos de videos a ser lançadas).
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
