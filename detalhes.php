@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes</title>
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <?php
     require_once "includes/banco.php";
+    require_once "includes/login.php";
     require_once "includes/funcoes.php";
     ?>
     <div id="corpo">
         <?php
-            include_once "cabecalho.php";
+            include_once "top.php";
             $codigo = $_GET['cod'] ?? 0;
             $busca = $banco->query("SELECT * FROM jogos WHERE cod='$codigo'");
         ?>
@@ -38,7 +40,7 @@
                 }
             ?>
         </table>
-        <a href="index.php"><img src="icones/icoback.png" alt="Voltar"></a>
+        <?php echo voltar(); ?>
     </div>
     <?php include_once "rodape.php"; ?>
 </body>
